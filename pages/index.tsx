@@ -48,7 +48,7 @@ const Home: NextPage = () => {
     function emojiUpdate(event: ChangeEvent<HTMLInputElement>) {
         const regex = emojiRegex();
         const text = event.currentTarget.value;
-        let internalEmoji = ''
+        let internalEmoji = '';
 
         // @ts-ignore
         for (const match of text.matchAll(regex)) {
